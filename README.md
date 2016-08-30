@@ -37,6 +37,6 @@ npm install
 To create a build of this library you can do: 
 
 ```bash
-npm build
+npm run build
 ```
 
