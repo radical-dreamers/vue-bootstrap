@@ -202,4 +202,4 @@ exports.default = {
 });})();require('___globals___');
 
 
-//# sourceMappingURL=vue-bootstrap.js.map
+//# sourceMappingURL=rd-vue-bootstrap.js.map

@@ -1,18 +1,18 @@
 {
-  "name": "vue-bootstrap",
+  "name": "rd-vue-bootstrap",
   "description": "A tiny wrapper to ease the use of Bootstrap 3 on Vue-based apps",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/radical-dreamers/vue-bootstrap.git"
   },
-  "main": "dist/vue-bootstrap.js",
+  "main": "dist/rd-vue-bootstrap.js",
   "jsnext:main": "src/index.js",
   "files": [
-    "dist",
-    "src",
-    "lib"
+      "dist",
+      "src",
+      "lib"
   ],
   "scripts": {
     "watch": "brunch watch --server",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/radical-dreamers/vue-bootstrap/issues"
   },
-  "homepage": "https://github.com/radical-dreamers/vue-bootstrap#readme",
+    "homepage": "https://github.com/radical-dreamers/vue-bootstrap#readme",
   "author": "Rodrigo Juliani",
   "keywords": [
     "vue",
@@ -45,13 +45,11 @@
     "css-brunch": "^2.6.1",
     "javascript-brunch": "^2.0.0",
     "jquery": "^3.1.0",
-    "uglify-js-brunch": "^2.0.1",
     "vue": "^1.0.26",
     "vue-brunch": "1.1.2",
-    "vue-devtools": "^2.0.4",
-    "vue-router": "^0.7.13"
-  },
-  "jspm": {
+    "vue-devtools": "^2.0.4"
+},
+"jspm": {
     "main": "src/index.js",
     "registry": "npm",
     "format": "esm"

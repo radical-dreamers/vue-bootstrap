@@ -6,12 +6,12 @@ module.exports = {
     files: {
         javascripts: {
             joinTo: {
-                'vue-bootstrap.js': /^src/
+                'rd-vue-bootstrap.js': /^src/
             }
         },
         templates: {
             joinTo: {
-                'vue-bootstrap.js': /^src/
+                'rd-vue-bootstrap.js': /^src/
             }
         }
     },
