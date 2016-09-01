@@ -2,20 +2,27 @@
   "name": "vue-bootstrap",
   "description": "A tiny wrapper to ease the use of Bootstrap 3 on Vue-based apps",
   "version": "0.0.1",
-  "license": "GPL v3.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/radical-dreamers/vue-bootstrap.git"
   },
+  "main": "dist/vue-bootstrap.js",
+  "jsnext:main": "src/index.js",
+  "files": [
+    "dist",
+    "src",
+    "lib"
+  ],
   "scripts": {
     "watch": "brunch watch --server",
     "build": "brunch build --production"
   },
-  "author": {
-    "url": "http://www.codelightsoftware.com",
-    "name": "Rodrigo Juliani",
-    "email": "srodriki@gmail.com"
+  "bugs": {
+    "url": "https://github.com/radical-dreamers/vue-bootstrap/issues"
   },
+  "homepage": "https://github.com/radical-dreamers/vue-bootstrap#readme",
+  "author": "Rodrigo Juliani",
   "keywords": [
     "vue",
     "brunch",
@@ -23,24 +30,30 @@
     "vueboot"
   ],
   "peerDependencies": {
-      "bootstrap": "latest",
-      "vue": "^1.0.26",
-      "jquery": "latest"
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.6",
+    "vue": "^1.0.26"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
     "babel-brunch": "^6.0.6",
     "babel-preset-es2015": "^6.14.0",
+    "babel-runtime": "^5.8.38",
+    "bootstrap": "^3.3.6",
     "brunch": "^2.8.2",
     "css-brunch": "^2.6.1",
     "javascript-brunch": "^2.0.0",
-    "vue-brunch": "^1.1.2",
-    "vue-devtools": "^2.0.4",
+    "jquery": "^3.1.0",
+    "uglify-js-brunch": "^2.0.1",
     "vue": "^1.0.26",
-    "vue-router": "^0.7.13",
-    "bootstrap": "^3.3.6"
+    "vue-brunch": "1.1.2",
+    "vue-devtools": "^2.0.4",
+    "vue-router": "^0.7.13"
+  },
+  "jspm": {
+    "main": "src/index.js",
+    "registry": "npm",
+    "format": "esm"
   }
 }
