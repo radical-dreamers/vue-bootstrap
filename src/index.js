@@ -4,10 +4,11 @@
 //import bootstrap from 'bootstrap';
 
 import Vue from "vue";
+import BsButtonGroup from ".components/bs-button-group";
 
 // This is a list of all our Vue components
 export const components = {
-
+    BsButtonGroup
 };
 
 //This is a list of all our Vue directives
@@ -37,5 +38,5 @@ export default {
 
 // Export all components and directives sepparetely.
 export {
-
+    BsButtonGroup
 }
