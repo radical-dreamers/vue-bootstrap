@@ -1,14 +1,14 @@
 {
   "name": "rd-vue-bootstrap",
   "description": "A tiny wrapper to ease the use of Bootstrap 3 on Vue-based apps",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/radical-dreamers/vue-bootstrap.git"
   },
   "main": "dist/rd-vue-bootstrap.js",
-  "jsnext:main": "src/index.js",
+  "jsnext:main": "src/rd-vue-bootstrap.js",
   "files": [
       "dist",
       "src",
@@ -50,7 +50,7 @@
     "vue-devtools": "^2.0.4"
 },
 "jspm": {
-    "main": "src/index.js",
+    "main": "src/rd-vue-bootstrap.js",
     "registry": "npm",
     "format": "esm"
   }

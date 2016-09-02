@@ -181,7 +181,7 @@ if (module.hot) {(function () {  module.hot.accept()
 })()}
 });
 
-;require.register("src/index.js", function(exports, require, module) {
+;require.register("src/rd-vue-bootstrap.js", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
