@@ -4,7 +4,7 @@
 //import bootstrap from 'bootstrap';
 
 import Vue from "vue";
-import BsButtonGroup from ".components/bs-button-group";
+import BsButtonGroup from "./components/bs-button-group";
 
 // This is a list of all our Vue components
 export const components = {

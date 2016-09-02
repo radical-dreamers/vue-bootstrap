@@ -149,29 +149,67 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("src/index.js", function(exports, require, module) {
+require.register("src/components/bs-button-group.vue", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.directives = exports.components = undefined;
+exports.default = {
+    // Options / Data
+    data: function data() {
+        return {};
+    },
+
+    props: [],
+    computed: {},
+    methods: {},
+    name: "BsButtonGroup"
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"btn-group\" role=\"group\">\n    <slot></slot>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  var id = "src/components/bs-button-group.vue"
+  if (!module.hot.data) {
+    hotAPI.createRecord(id, module.exports)
+  } else {
+    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+});
+
+;require.register("src/index.js", function(exports, require, module) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.BsButtonGroup = exports.directives = exports.components = undefined;
 
 var _vue = require("vue");
 
 var _vue2 = _interopRequireDefault(_vue);
 
+var _bsButtonGroup = require("./components/bs-button-group");
+
+var _bsButtonGroup2 = _interopRequireDefault(_bsButtonGroup);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // This is a list of all our Vue components
-var components = exports.components = {};
-
-//This is a list of all our Vue directives
 //The following imports have been commented out for now, as I believe they are not necessary.
 //TODO: Check if these imports are needed in POC. If not => remove them completely
 //import $ from 'jquery';
 //import bootstrap from 'bootstrap';
 
+var components = exports.components = {
+    BsButtonGroup: _bsButtonGroup2.default
+};
+
+//This is a list of all our Vue directives
 var directives = exports.directives = {};
 
 exports.default = {
@@ -195,6 +233,8 @@ exports.default = {
 };
 
 // Export all components and directives sepparetely.
+
+exports.BsButtonGroup = _bsButtonGroup2.default;
 });
 
 ;require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
